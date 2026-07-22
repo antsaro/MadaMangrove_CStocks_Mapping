@@ -27,8 +27,8 @@ Bootstrap-derived standard deviation maps quantifying prediction uncertainty for
 │   ├── CarbonStock_Predicted_region1.jpg
 │   └── CarbonStock_STD_region1.jpg
 ├── README.md
-├── mean_std_prediction.ipynb
-└── ml_modelling.ipynb
+├── maps_prediction_code.ipynb
+└── ml_modelling_code.ipynb
 ```
 
 ## Citation
