@@ -1,4 +1,4 @@
-# MadaMangrove-CStocks-Mapping
+# MadaMangrove CStocks Mapping
 
 This repository contains the full analytical workflow for spatially explicit estimation and uncertainty assessment of mangrove ecosystem carbon stocks across Madagascar, covering aboveground carbon (AGC), belowground carbon (BGC), and soil organic carbon (SOC) at multiple depth intervals (0–30 cm, 0–100 cm, and 0–200 cm), as well as total ecosystem carbon stocks (TECS).
 
