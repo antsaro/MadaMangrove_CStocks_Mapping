@@ -1,0 +1,36 @@
+# Conda environment for maps_prediction_code.ipynb
+#
+# This notebook does GPU-accelerated raster inference with RAPIDS
+# (cuML's ForestInference for the trained Random Forest, cuPy for
+# array operations and inpainting). RAPIDS is distributed through
+# its own conda channel and generally is not installable with plain
+# pip, so this notebook needs a separate environment from the one
+# built with requirements.txt.
+#
+# Create it with:
+#   conda env create -f environment-gpu.yml
+#   conda activate mada-mangrove-gpu
+#
+# Requires an NVIDIA GPU with a driver compatible with CUDA 12.x.
+# Check current RAPIDS/CUDA compatibility at https://rapids.ai/start.html
+# before installing, since supported versions change over time.
+
+name: mada-mangrove-gpu
+channels:
+  - rapidsai
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.11
+  - cuml=24.10
+  - cupy
+  - cudatoolkit=12.2
+  - scikit-learn>=1.3
+  - numpy>=1.24
+  - pandas>=2.0
+  - joblib>=1.3
+  - rasterio>=1.3
+  - tqdm>=4.66
+  - psutil>=5.9
+  - jupyterlab>=4.0
+  - ipykernel>=6.25

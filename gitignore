@@ -1,0 +1,57 @@
+# Data
+# Raw and processed carbon stock tables, VIF selection outputs, and
+# raster covariates are not tracked here — see README for data sources.
+*.csv
+*.tif
+*.tiff
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+/data/
+/VIF/
+/ML_Results_NestedCV/
+/Mangrove_*_clean_full.csv
+
+# Trained models / inference artifacts
+*.pkl
+*.joblib
+*.model
+/models/
+
+# Fonts and other large binary assets pulled in at runtime
+*.ttf
+
+# Kaggle / notebook execution artifacts
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+/kaggle/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Conda
+*.conda/
+
+# Jupyter
+.jupyter/
+
+# GPU / CUDA cache
+.nv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log

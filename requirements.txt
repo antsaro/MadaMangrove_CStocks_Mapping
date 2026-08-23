@@ -1,0 +1,26 @@
+# Core dependencies for ml_modelling_code.ipynb
+# (nested cross-validation, Optuna hyperparameter search, Random Forest
+# training on tabular carbon stock data). CPU-only, installable with pip.
+#
+# For maps_prediction_code.ipynb (GPU raster inference with RAPIDS
+# cuML/cuPy), see environment-gpu.yml instead — those packages are not
+# pip-installable in a standard environment.
+
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+optuna>=3.4
+joblib>=1.3
+matplotlib>=3.7
+
+# Raster I/O, used for reading covariate/prediction rasters even outside
+# the GPU inference notebook (e.g. for inspection or CPU-side prediction)
+rasterio>=1.3
+
+# Progress bars and system resource monitoring, used in both notebooks
+tqdm>=4.66
+psutil>=5.9
+
+# Notebook environment
+jupyterlab>=4.0
+ipykernel>=6.25
